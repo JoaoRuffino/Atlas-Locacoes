@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main: #e8c468;
+    --main2: #274754;
+    --main3: #2a9d90;
+    --main4: #f8b256;
+    --main5: #11b19e;
+    --main6: #d36363;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#F5F5F5;
+    --bg-200:#ebebeb;
+    --bg-300:#c2c2c2;
+    --black: #08090A;
+    --white: #ffffff;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: calc(100vh - 100px);
+    background-color: var(--white);
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10%;
+    font-size: 40px;
+}
+.emphasys{
+    font-weight: bold;
+    color: var(--main3);
+}
+.title-1{
+    color: var(--main2);
+}
+.call-ta{
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    color: var(--white);
+    margin-top: 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, #f3d484, #f8b256, #ffc12f);
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    transition: 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left a{
+    text-decoration: none;
+    width: 70%;
+}
+
+.call-ta:hover{
+    transform: scale(1.1);
+}
+.img-call{
+        height: 42px;
+        width: auto;
+        margin-left: 16px;
+}
+.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Segunda Tela */
+
+.second{
+    height: 100vh;
+    background-image: url('../assets/imgs/background-building.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+
+}
+.cards{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+}
+.card-1, .card-2, .card-3{
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    margin: 0 20px 0 20px;
+    border-radius: 20px;
+    height: 90%;
+    transition: 0.5s;
+}
+.card-1:hover, .card-2:hover, .card-3:hover{
+    transform: scale(1.05);
+}
+.cards h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.card-1 h2{
+    color: var(--main6);
+}
+.card-2 h2{
+    color: var(--main4);
+}
+.card-3 h2{
+    color: var(--main5);
+}
+.card-1{
+    box-shadow: 20px 20px 50px -30px #d36363;
+}
+.information{
+    display: flex;
+    align-items: center;
+}
+.icon-32{
+    height: 32px;
+    width: 32px;
+}
+.card-1 .icon-32{
+    margin-left: 10px;
+    background-image: url('../assets/icon/info.png');
+}
+.card-2{
+    box-shadow: 20px 20px 50px -30px #f8b256;
+}
+.card-2 .icon-32{
+    margin-left: 10px;
+    background-image: url('../assets/icon/history-book.png');
+}
+.card-3{
+    box-shadow: 20px 20px 50px -30px #11b19e;
+}
+.card-3 .icon-32{
+    margin-left: 10px;
+    background-image: url('../assets/icon/atlas.png');
+}
+.text{
+    font-size: 20px;
+}
+.text p{
+    margin-bottom: 20px;
+}
+.viga{
+    position: absolute;
+    top: 180vh;
+}
+
+.skew {
+    width: 100%;
+    z-index: 2;
+}
+.skew-1 {
+    background-color: #1c1d22;
+    /* opacity: 0.7; */
+    height: 100px;
+    transform: skewY(0deg) translateY(0px);
+    box-shadow: 20px 20px 50px -30px #08090A;
+
+}
+
+
+/* Terceira Tela */
+
+.third{
+    height: 80vh;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+
+}
+.third h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: var(--main4);
+    letter-spacing: 3px;
+}
+
+.formulario{
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.formulario .icon-32{
+    margin-left: 10px;
+    background-image: url('../assets/icon/orcamento.png');
+}
+
+form label{
+    color: var(--main2);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form input{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #f8b256;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--main2);
+}
+form input:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid #11b19e;
+}
+form input:focus::placeholder, form textarea:focus::placeholder{
+    color: var(--main5);
+}
+textarea:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #11b19e;
+}
+
+textarea{
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    height: 100px;
+    color: var(--main2);
+    padding: 10px;
+    border: 2px solid #f8b256;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+textarea::placeholder, input::placeholder{
+    color: var(--main2);
+}
+
+
+@media (max-width: 1400px){
+    .information{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        width: 95%;
+    }
+    .card-1, .card-2, .card-3{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1024px){
+    
+    .cards{
+        flex-direction: column;
+        height: 98%;
+    }
+    .card-1, .card-2, .card-3{
+        margin: 20px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .text p{
+        margin-bottom: 10px;
+    }
+    .right img{
+        width: 80%;
+    }
+    .title-1, .title-2{
+        font-size: 40px;
+    }
+    .call-ta{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px){
+    .first{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .right img{
+        width: 200px;
+        
+    }
+    .title-1, .title-2{
+        font-size: 50px;
+    }
+    .information{
+        flex-direction: row;
+    }
+    .second{
+        height: 150vh;
+    }
+    form label{
+        margin-bottom: 40px;
+    }
+    .formulario{
+        width: 95%;
+    }
+    .formulario h2{
+        font-size: 30px;
+    }
+}

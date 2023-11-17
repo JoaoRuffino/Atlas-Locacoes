@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #e8c468;
+    --main2: #274754;
+    --main3: #2a9d90;
+    --main4: #f8b256;
+    --main5: #11b19e;
+    --main6: #d36363;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#F5F5F5;
+    --bg-200:#ebebeb;
+    --bg-300:#c2c2c2;
+    --black: #08090A;
+    --white: #ffffff;
+}
+
+.link:link,
+.link:visited,
+.link:active,
+.link:hover {
+    color: var(--black);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fot-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 60px;
+    background-color: #333333;
+
+}
+
+.box h2{
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.box li a{
+    color: var(--bg-300);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.box li{
+    margin-bottom: 30px;
+}
+.box ul{
+    list-style-type: none;
+}
+.box li a:hover{
+    color: var(--main4);
+}
+
+.skew-2{
+    width: 95%;
+    z-index: 2;
+    background-color: var(--white);
+    height: 2px;
+}
+.fot-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+.fot-2 img{
+    width: 70px;
+}
+.box-2 h3{
+    color: var(--main2);
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.box-2 a{
+    text-decoration: none;
+    color: var(--main2);
+}
+
+@media (max-width: 768px){
+    .fot-1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .box h2{
+        font-size: 22px;
+    }
+    .box li a{
+        font-size: 15px;
+    }
+    .fot-2 h3{
+        font-size: 10px;
+    }
+}
