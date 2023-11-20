@@ -271,6 +271,115 @@ textarea::placeholder, input::placeholder{
 }
 
 
+/* ============================== STYLE CONTATOS =========================== */
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.contact-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background-color: var(--white);
+    padding: 60px ;
+}
+.title-3{
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+
+}
+.text-3{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+.emphasys-2{
+    color: #f8b256;
+}
+
+.contact-second{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--bg-100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1, .container-2, .container-3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.container-1 .icon-32{
+    background-image: url('../assets/icon/email.png');
+}
+.container-2 .icon-32{
+    background-image: url('../assets/icon/phone-call.png');
+}
+.container-3 .icon-32{
+    background-image: url('../assets/icon/whatsapp.png');
+}
+
+.contact-second h2{
+    color: var(--main5);
+    margin: 10px 0 10px 0;
+}
+.contact-second a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    transition: 0.5s;
+}
+.contact-second a:hover{
+    color: var(--main4);
+}
+
+/* ============================== STYLE SERVIÇOS =========================== */
+
+.serv-1{
+    height: calc(80vh - 100px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.link-1{
+    background-image: url('../assets/imgs/back-1.jpg');
+}
+.link-1:hover, .link-2:hover{
+    filter: grayscale(0);
+}
+.link-2{
+    background-image: url('../assets/imgs/back-2.jpg');
+}
+.link-1, .link-2{
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: end;
+}
+.serv-1 a{
+    text-decoration: none;
+}
+.title-4{
+    font-size: 40px;
+    color: var(--white);
+}
+
 @media (max-width: 1400px){
     .information{
         flex-direction: column-reverse;
@@ -335,5 +444,22 @@ textarea::placeholder, input::placeholder{
     }
     .formulario h2{
         font-size: 30px;
+    }
+    .left{
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-2{
+        text-align: center;
+    }
+
+    /* ============================== STYLE CONTATOS =========================== */
+    .contact-second{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .title-3{
+        font-size: 40px;
     }
 }
