@@ -17,6 +17,9 @@ html{
     --main4: #f8b256;
     --main5: #11b19e;
     --main6: #d36363;
+    --main7: #267a32;
+    --main8: #2c4099;
+    --main9: #6e2929;
     --text-100:#333333;
     --text-200:#5c5c5c;
     --bg-100:#F5F5F5;
@@ -311,7 +314,7 @@ textarea::placeholder, input::placeholder{
     justify-content: center;
 }
 
-.container-1, .container-2, .container-3{
+.container-1, .container-2, .container-3, .container-4{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -327,6 +330,9 @@ textarea::placeholder, input::placeholder{
 .container-3 .icon-32{
     background-image: url('../assets/icon/whatsapp.png');
 }
+.container-4 .icon-32{
+    background-image: url('../assets/icon/location.png');
+}
 
 .contact-second h2{
     color: var(--main5);
@@ -337,6 +343,7 @@ textarea::placeholder, input::placeholder{
     color: var(--black);
     font-weight: bold;
     transition: 0.5s;
+    text-align: center;
 }
 .contact-second a:hover{
     color: var(--main4);
@@ -345,7 +352,7 @@ textarea::placeholder, input::placeholder{
 /* ============================== STYLE SERVIÇOS =========================== */
 
 .serv-1{
-    height: calc(80vh - 100px);
+    height: calc(100vh - 100px);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -379,6 +386,108 @@ textarea::placeholder, input::placeholder{
     font-size: 40px;
     color: var(--white);
 }
+.serv-2{
+    padding: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.serv-box{
+    margin: 0 30px 0 30px;
+    padding: 60px 30px;
+    border-radius: 8px 70px 40px 100px;
+    background-color: var(--bg-100);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.sr-1{
+    box-shadow: 20px 20px 50px -30px #267a32;
+}
+.sr-2{
+    box-shadow: 20px 20px 50px -30px #2c4099;
+}
+.sr-3{
+    box-shadow: 20px 20px 50px -30px #6e2929;
+
+}
+.serv-box h1{
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    color: var(--main2);
+}
+.text-serv{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--text-100);
+}
+
+.serv-box:hover{
+    background-color: #333333;
+}
+.serv-box:hover h1{
+    color: var(--white);
+}
+.serv-box:hover .text-serv{
+    color: var(--white);
+}
+
+.a-serv{
+    text-decoration: none;
+    margin-top: 20px;
+    width: 320px;
+    align-self: flex-end;
+}
+.a-serv button{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 320px;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+}
+.a-1 button, .a-2 button, .a-3 button{
+    background-color: transparent;
+    transition: 0.8;
+}
+.a-1 button{
+    color: var(--main7);
+    border: 1px solid #267a32;
+}
+.a-2 button{
+    color: var(--main8);
+    border: 1px solid #2c4099;
+
+}
+.a-3 button{
+    color: var(--main9);
+    border: 1px solid #6e2929;
+
+}
+.serv-box:hover .a-1 button{
+    background-color: var(--main7);
+    color: var(--white);
+}
+.serv-box:hover .a-2 button{
+    background-color: var(--main8);
+    color: var(--white);
+}
+.serv-box:hover .a-3 button{
+    background-color: var(--main9);
+    color: var(--white);
+}
+
+canvas{
+    border: 1px solid black;
+}
 
 @media (max-width: 1400px){
     .information{
@@ -389,6 +498,12 @@ textarea::placeholder, input::placeholder{
     }
     .card-1, .card-2, .card-3{
         padding: 20px;
+    }
+    .serv-2{
+        flex-direction: column;
+    }
+    .serv-box{
+        margin: 20px 0px 20px 0px;
     }
 }
 
@@ -457,9 +572,14 @@ textarea::placeholder, input::placeholder{
     /* ============================== STYLE CONTATOS =========================== */
     .contact-second{
         flex-direction: column;
-        height: 60vh;
+        height: 100vh;
     }
     .title-3{
         font-size: 40px;
+    }
+        /* ============================== STYLE SERVIÇOS =========================== */
+  
+    .serv-1{
+        flex-direction: column;
     }
 }
