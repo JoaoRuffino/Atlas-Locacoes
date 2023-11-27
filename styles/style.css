@@ -252,7 +252,7 @@ form input:focus{
 form input:focus::placeholder, form textarea:focus::placeholder{
     color: var(--main5);
 }
-textarea:focus{
+textarea:focus, .btn-enviar:focus{
     outline: none;
     box-shadow: none;
     border: 2px solid #11b19e;
@@ -273,6 +273,42 @@ textarea::placeholder, input::placeholder{
     color: var(--main2);
 }
 
+.btn-enviar{
+    background-color: transparent;
+    border: 2px solid #f8b256;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    transition: 0.5s;
+}
+.btn-enviar:hover{
+    background-color: #f8b256;
+    color: var(--white);
+}
+.box-suc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.box-suc .icon-32{
+    background-image: url('../assets/icon/confirm.png');
+    margin-right: 10px;
+}
+
+.sucess{
+    background: linear-gradient(to right, #48a54c, #4BAE4F);
+    padding: 20px;
+    border: none;
+    color: var(--bg-100);
+    border-radius: 10px;
+    text-align: center;
+}
 
 /* ============================== STYLE CONTATOS =========================== */
 .contact{
@@ -306,7 +342,7 @@ textarea::placeholder, input::placeholder{
 
 .contact-second{
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     background-color: var(--bg-100);
     display: flex;
     flex-direction: row;
@@ -314,7 +350,7 @@ textarea::placeholder, input::placeholder{
     justify-content: center;
 }
 
-.container-1, .container-2, .container-3, .container-4{
+.container-1, .container-2, .container-3, .container-4, .container-5, .container-0{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -332,6 +368,12 @@ textarea::placeholder, input::placeholder{
 }
 .container-4 .icon-32{
     background-image: url('../assets/icon/location.png');
+}
+.container-5 .icon-32{
+    background-image: url('../assets/icon/instagram.png');
+}
+.container-0 .icon-32{
+    background-image: url('../assets/icon/clock.png');
 }
 
 .contact-second h2{
@@ -397,7 +439,7 @@ textarea::placeholder, input::placeholder{
 .serv-box{
     margin: 0 30px 0 30px;
     padding: 60px 30px;
-    border-radius: 8px 70px 40px 100px;
+    border-radius: 8px 70px 40px 70px;
     background-color: var(--bg-100);
     transition: 0.5s;
     display: flex;
@@ -485,9 +527,52 @@ textarea::placeholder, input::placeholder{
     color: var(--white);
 }
 
-canvas{
-    border: 1px solid black;
+        /* ============================== STYLE CATALOGO =========================== */
+
+.cat-1{
+    padding: 60px;
+    font-family: 'Roboto Slab', serif;
 }
+
+.cat-1 h1{
+    font-size: 50px;
+    color: var(--main2);
+    margin-bottom: 20px;
+}
+.cat-pdf{
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title-5-a{
+    font-size: 30px;
+    color: var(--main7);
+}
+.title-5-b{
+    font-size: 30px;
+    color: var(--main8);
+}
+
+.btn-equ{
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #11b19e;
+    color: #11b19e;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 320px;
+}
+.btn-equ:hover{
+    color: white;
+    background-color: #11b19e;
+}
+
+
 
 @media (max-width: 1400px){
     .information{
@@ -504,6 +589,13 @@ canvas{
     }
     .serv-box{
         margin: 20px 0px 20px 0px;
+    }
+    .box-suc{
+        width: 95%;
+        flex-direction: column;
+    }
+    .box-suc .icon-32{
+        margin-bottom: 12px;
     }
 }
 
@@ -557,6 +649,7 @@ canvas{
     .formulario{
         width: 95%;
     }
+    
     .formulario h2{
         font-size: 30px;
     }
@@ -567,12 +660,19 @@ canvas{
     }
     .title-2{
         text-align: center;
+        font-size: 40px;
+    }
+    .title-1{
+        font-size: 40px;
+    }
+    .sucess h3{
+        font-size: 15px;
     }
 
     /* ============================== STYLE CONTATOS =========================== */
     .contact-second{
         flex-direction: column;
-        height: 100vh;
+        height: 70vh;
     }
     .title-3{
         font-size: 40px;
@@ -582,4 +682,9 @@ canvas{
     .serv-1{
         flex-direction: column;
     }
+    .serv-box h1{
+        font-size: 30px;
+    }
+
+
 }

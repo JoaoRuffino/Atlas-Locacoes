@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/carrossel.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
 
     <title>Atlas- Locações</title>
@@ -33,7 +36,7 @@
         <nav>
             <ul class="nav-list">
                 <li>
-                    <a href="index.html" class="link">Página Inicial</a>
+                    <a href="index.php" class="link">Página Inicial</a>
                 </li>
                 <li>
                     <a href="Contato.html" class="link">Contato</a>
@@ -48,14 +51,41 @@
         </nav>
     </header>
 
-    <canvas id="cnv">
+    <section class="cat-1">
+        <h1>Catálogo</h1>
 
-    </canvas>
 
-    <button id="prev">Anterior</button>
-    <button id="next">Próximo</button>
-    <span id="npages">number</span>
+        <p class="text">Para Acessar clique em um dos PDFs abaixo:</p>
+        <div class="cat-pdf">
+            <h2 class="title-5-a">Equipamentos: </h2>
+            <a href="assets/files/catalogo-equipamento.pdf" target="_blank"><button class="btn-equ">PDF</button></a>
+        </div>
+        <div class="cat-pdf">
+            <h2 class="title-5-b">Andaimes e Escoramentos: </h2>
+            <a href="assets/files/catalogo-escoramento.pdf" target="_blank"><button class="btn-equ">PDF</button></a>
+        </div>
+    </section>
 
+    <section class="third" id="orcamento">
+
+        
+        <div class="formulario">
+            <div class="information" data-aos="zoom-in" data-aos-delay="50">
+            <h2>Faça seu Orçamento</h2> <div class="icon-32"></div>
+            </div>
+            <form action="envio.php" method="POST">
+                <label for="email" data-aos="zoom-in" data-aos-delay="150">Seu email:</label><br>
+                <input type="email" id="email" name="txtemail" placeholder="Insira seu Email" data-aos="zoom-in" data-aos-delay="150"><br>
+                <label for="assunto" data-aos="zoom-in" data-aos-delay="300">Assunto:</label><br>
+                <input type="text" id="assunto" name="txtassunto" placeholder="Insira o Assunto" data-aos="zoom-in" data-aos-delay="300"><br>
+                <label for="mensagem" data-aos="zoom-in" data-aos-delay="500">Mensagem:</label><br><br>
+                <textarea type="text" id="mensagem" name="txtmensagem" placeholder="Insira a Mensagem" data-aos="zoom-in" data-aos-delay="500"></textarea>
+                <input type="submit" name="enviar" class="btn-enviar">
+
+            </form>
+        </div>
+
+</section>
 
 
     <footer>
@@ -63,7 +93,7 @@
             <div class="box" data-aos="fade-up" data-aos-delay="150">
                 <h2>Navegue</h2>
                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="index.php">Página Inicial</a></li>
                     <li><a href="Contato.html">Contato</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
@@ -72,16 +102,15 @@
             <div class="box" data-aos="fade-up" data-aos-delay="300">
                 <h2>Serviços</h2>
                 <ul>
-                    <li><a href="">Locação de Equipamentos</a></li>
-                    <li><a href="">Andaimes e Escoramentos</a></li>
+                    <li><a href="servicos.html">Locação de Equipamentos</a></li>
+                    <li><a href="servicos.html">Andaimes e Escoramentos</a></li>
                 </ul>
             </div>
             <div class="box" data-aos="fade-up" data-aos-delay="500">
                 <h2>Catálogo</h2>
                 <ul>
-                <li><a href="">Produto 1</a></li>
-                <li><a href="">Produto 2</a></li>
-                <li><a href="">Produto 3</a></li>
+                <li><a href="assets/files/catalogo-equipamento.pdf" target="_blank">Equipamentos</a></li>
+                <li><a href="assets/files/catalogo-escoramento.pdf" target="_blank">Escoramentos</a></li>
                 </ul>
             </div>
         </div>
@@ -92,11 +121,10 @@
             <img src="assets/icon/icon-atlas-removed.png" alt="Logotipo Atlas">
             <div class="box-2">
                 <h3>©️Atlas Locações - Todos os direitos Reservados</h3>
-                <h3><a href="">locacao@atlasacoealuminio.com.br</a></h3>
+                <h3><a href="mailto:locacao@atlasacoealuminio.com.br?">locacao@atlasacoealuminio.com.br</a></h3>
             </div>
         </div>
     </footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.189/pdf.min.mjs"></script>
 <script src="scripts/index.js"></script>
 </html>
