@@ -428,7 +428,7 @@ textarea::placeholder, input::placeholder{
     font-size: 40px;
     color: var(--white);
 }
-.serv-2{
+.serv-2, .serv-3{
     padding: 60px;
     display: flex;
     width: 100%;
@@ -456,6 +456,12 @@ textarea::placeholder, input::placeholder{
 .sr-3{
     box-shadow: 20px 20px 50px -30px #6e2929;
 
+}
+.sr-4{
+    box-shadow: 20px 20px 50px -30px #dbaa22;
+}
+.sr-5{
+    box-shadow: 20px 20px 50px -30px #7a44b8;
 }
 .serv-box h1{
     font-size: 40px;
@@ -514,6 +520,15 @@ textarea::placeholder, input::placeholder{
     border: 1px solid #6e2929;
 
 }
+.a-4 button{
+    color: #dbaa22;
+    border: 1px solid #dbaa22;
+}
+.a-5 button{
+    color: #7a44b8;
+    border: 1px solid #7a44b8;
+}
+
 .serv-box:hover .a-1 button{
     background-color: var(--main7);
     color: var(--white);
@@ -526,7 +541,14 @@ textarea::placeholder, input::placeholder{
     background-color: var(--main9);
     color: var(--white);
 }
-
+.serv-box:hover .a-4 button{
+    background-color: #dbaa22;
+    color: var(--white);
+}
+.serv-box:hover .a-5 button{
+    background-color: #7a44b8;
+    color: var(--white);
+}
         /* ============================== STYLE CATALOGO =========================== */
 
 .cat-1{
@@ -584,8 +606,14 @@ textarea::placeholder, input::placeholder{
     .card-1, .card-2, .card-3{
         padding: 20px;
     }
-    .serv-2{
+    .serv-2, .serv-3{
         flex-direction: column;
+    }
+    .serv-2{
+        padding-bottom: 0px;
+    }
+    .serv-3{
+        padding-top: 0px;
     }
     .serv-box{
         margin: 20px 0px 20px 0px;
