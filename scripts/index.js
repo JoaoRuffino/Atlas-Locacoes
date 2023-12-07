@@ -48,18 +48,18 @@ const link_4 = document.querySelector('.link-4');
 
 
 link_1.addEventListener('click', () => {
-    window.location.href = "catalogo.html";
+    window.location.href = "catalogo.html#equipamentos";
 })
 
 
 link_2.addEventListener('click', () => {
-    window.location.href = "catalogo.html";
+    window.location.href = "catalogo.html#andaimes";
 })
 
 link_3.addEventListener('click', () => {
-    window.location.href = "catalogo.html";
+    window.location.href = "catalogo.html#grua";
 })
 
 link_4.addEventListener('click', () => {
-    window.location.href = "catalogo.html";
+    window.location.href = "catalogo.html#cremalheira";
 })

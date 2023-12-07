@@ -588,7 +588,14 @@ textarea::placeholder, input::placeholder{
     font-size: 30px;
     color: var(--main8);
 }
-
+.title-5-c{
+    font-size: 30px;
+    color: var(--main4);
+}
+.title-5-d{
+    font-size: 30px;
+    color: #7a44b8;
+}
 .btn-equ{
     margin-top: 30px;
     padding: 20px;
