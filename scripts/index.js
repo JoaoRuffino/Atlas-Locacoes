@@ -43,6 +43,9 @@ mobileNavbar.init();
 // Links das imagens dos Serviços
 const link_1 = document.querySelector('.link-1');
 const link_2 = document.querySelector('.link-2');
+const link_3 = document.querySelector('.link-3');
+const link_4 = document.querySelector('.link-4');
+
 
 link_1.addEventListener('click', () => {
     window.location.href = "catalogo.html";
@@ -53,5 +56,10 @@ link_2.addEventListener('click', () => {
     window.location.href = "catalogo.html";
 })
 
+link_3.addEventListener('click', () => {
+    window.location.href = "catalogo.html";
+})
 
-//Carrossel
+link_4.addEventListener('click', () => {
+    window.location.href = "catalogo.html";
+})

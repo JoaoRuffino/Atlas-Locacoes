@@ -397,19 +397,31 @@ textarea::placeholder, input::placeholder{
     height: calc(100vh - 100px);
     width: 100%;
     display: flex;
+    flex-direction: column;
+}
+.serv-first{
+    height: 50%;
+    width: 100%;
+    display: flex;
     flex-direction: row;
 }
 
 .link-1{
-    background-image: url('../assets/imgs/back-1.jpg');
+    background-image: url('../assets/imgs/back-1.webp');
 }
-.link-1:hover, .link-2:hover{
+.link-1:hover, .link-2:hover, .link-3:hover, .link-4:hover{
     filter: grayscale(0);
 }
 .link-2{
-    background-image: url('../assets/imgs/back-2.jpg');
+    background-image: url('../assets/imgs/back-2.webp');
 }
-.link-1, .link-2{
+.link-3{
+    background-image: url('../assets/imgs/back-3.webp');
+}
+.link-4{
+    background-image: url('../assets/imgs/back-4.webp');
+}
+.link-1, .link-2, .link-3, .link-4{
     flex: 1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -707,7 +719,7 @@ textarea::placeholder, input::placeholder{
     }
         /* ============================== STYLE SERVIÇOS =========================== */
   
-    .serv-1{
+    .serv-first{
         flex-direction: column;
     }
     .serv-box h1{
